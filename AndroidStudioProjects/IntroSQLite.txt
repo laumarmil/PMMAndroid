@@ -1,0 +1,43 @@
+Introduccion a Room
+Base de datos Android
+
+Arquitectura: Activity--->ViewModel[liveData]--->Repositorio--->RoomDatabase[DAO]-->[SQLite]
+
+Implementacion de Room
+Para usar esta librería seguiremos los siguientes pasos:
+
+    Añadir dependencia de Room a Gradle
+    Crear una Entity por cada modelo
+    Crear DAOs
+    Crear subclase de RoomDatabase
+    Crear Repositorio
+    Testear capa de datos
+    Testear Migraciones
+
+Vamos a trabajar:
+CRUDs[create read update y delete]
+Relaciones (entre tablas)
+Busquedas
+Visitas
+
+
+
+Trabajo:
+Matriculacion alumnos a asignaturas
+
+1.Asignaturas: lista asignaturas con codigo asig, nombre asig y numero de alumnos
+y añadir asignatura: introduce asignatura: codigo, asignatura
+eliminar asig(con confirmacion) y editar
+1. Alumnos: lista alumnos con dni, nombre y apellido
+añadir aluno: introduce alumno: dni, nombre,apellido
+eliminar y editar
+y flecha que lleve a qué asignaturas está matriculado 
+y añadir asignatura con una lista emergente de asignaturas que aun no esté matriculado.(esta en radiobutton para asignar de uno en uno, si usas checkbox sube nota)
+
+claves primarias de:
+  -Asig: codigo
+  -Alu: dni
+
+
+
+
